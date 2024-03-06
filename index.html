@@ -125,3 +125,34 @@ h2{
         background: #154953;
 }
 </STYLE>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Payment Alert</title>
+    <script>
+        // Function to detect if the user is on a mobile device
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        // Function to show the alert and block outside clicks
+        function showAlertAndBlock() {
+            // Check if the user is on a mobile device
+            if (isMobileDevice()) {
+                // Show alert for mobile users
+                alert("Sorry, you can't pay using a mobile device.");
+                // Block outside clicks
+                document.addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    event.preventDefault();
+                    return false;
+                });
+            }
+        }
+    </script>
+</head>
+<body onload="showAlertAndBlock()">
+    <h1>Welcome to our payment portal!</h1>
+    <p>Click anywhere to proceed.</p>
+</body>
+</html>
