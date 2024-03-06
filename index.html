@@ -1,0 +1,127 @@
+<!--
+
+
+
+
+            I am a Beginner 💙
+               Upvote me 🍁
+                Please 🙏🥺
+ 
+
+
+
+
+
+
+
+
+
+
+
+-->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>ECET  2024 FEES PAYMENT</title>
+                <link rel="stylesheet" href="Payment_Form.css""></link>
+</head>
+<body>
+                <div class="container">
+                        <form>
+                        <h2>Payment Form</h2>
+                        <hr>
+                        
+                        <!-- user information -->
+                        <h3 class="user_info">User Information</h3>
+                        <!-- name -->
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" placeholder="Type your name" required><br><br>
+                        
+                        <!-- passcode -->
+                        <label for="pass">DIPLOMA PIN NO</label><br>
+                        <input type="password" id="pass" placeholder="Type password" required><br><br>
+                        
+                        <!-- Gender -->
+                        Gender: <br>                    
+                        <input type="radio" id="male" name="gender">
+                      <label for="male">Male</label>
+                      <br>                                        
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                        <br><br>
+                        
+                        <!-- address -->
+                        BRANCH:-<br>
+                        <textarea placeholder="Type your address" style="height:139px; width:250px"></textarea><br>
+                        
+                        <!-- email -->
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" placeholder="example@gmail.com" required><br>
+                        
+                     <h3>Payment Information</h3>
+                        
+                        <!-- Card Type -->
+                       Card Type:<br>
+                       <select id="card_type" name="card_type" required>
+                               <option value="" >--Select Card Type--</option>
+                               <option value="credit_card">Credit Card</option>
+                               <option value="debit_card">Debit Card</option>
+                               <option value="visa">Visa</option>
+                               <option value="master_card">Master Card</option>
+                       </select><br> <br>
+                       
+                       <!-- Card Number -->
+                       <label for="Card">Card Number:</label>
+                       <br>
+                       <input type="number" id="Card" placeholder="7777 4444 3333 9999" required><br><br>
+                       <H2>900 INR
+                       <!-- submit -->
+                       <button class="btn">Pay Now</button>                                                                               
+                       </form>
+                </div>
+</body>
+</html>
+<STYLE>*{
+        box-sizing: border-box;
+}
+body{
+        margin: 15px 30px;
+        font-size: 17px;
+        padding: 8px;
+}
+.container{
+        background-color:#f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+        width: 100%;
+        padding: 6px;
+        border-radius: 1px;
+        
+}
+h2{
+        text-align: center;
+}
+.btn{
+        background: #075312;
+        color: whitesmoke;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+       border-radius:3px;
+       padding: 12px 20px;
+}
+.btn:hover{
+        background: #154953;
+}
+</STYLE>
